@@ -51,7 +51,7 @@ def move_scanners(current_firewall, directions):
     return updated_firewall
 
 
-def solve(firewall, directions):
+def solve_part_one(firewall, directions):
     packet_layer = 0
     severity = 0
     for i in range(len(firewall)):
@@ -67,4 +67,4 @@ def solve(firewall, directions):
 
 
 initial_firewall, initial_directions = initialize_firewall('input')
-print(solve(initial_firewall, initial_directions))
+print(solve_part_one(initial_firewall, initial_directions))
